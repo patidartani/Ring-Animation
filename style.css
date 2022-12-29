@@ -1,0 +1,218 @@
+html,
+body {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #151515e7;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-y: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+  color: rgba(255, 255, 255, 0.89);
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 3px;
+  right: 100px;
+  left: 80%;
+  line-height: 80px;
+   /* z-index: 1;  */
+}
+.contact:hover{
+  color: #6adb9d;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  color: #6adb9d;
+  top: 4px;
+  right: 2em;
+  line-height: 80px;
+  z-index: 1;
+}
+
+.header {
+  position: absolute;
+  top: 42%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.ml7 {
+  position: relative;
+  font-weight: 500;
+  font-size: 3.7em;
+}
+
+.ml7 .text-wrapeer {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+ .ml7 .letter {
+  transform-origin: 0% 100%;
+  display: inline-block;
+  line-height: 1em;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.761);
+  font-weight: bolder;
+  font-size: 10px;
+  margin-bottom: 0px;
+  /* text-transform: uppercase; */
+  font-family:'Times New Roman', Times, serif;
+}
+
+#tagline {
+  width: 500px;
+}
+
+p {
+  color: rgba(128, 126, 126, 0.933);
+  font-weight: 200;
+  font-family: "Roboto";
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+button {
+  margin-right: 15px;
+  padding: 12px 29px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+
+#one {
+  background: none;
+  border: 0.3pt solid rgba(255, 255, 255, 0.3);
+  color:rgba(255, 255, 255, 0.363) ;
+  transition: 0.5s;
+}
+#one:hover{
+  border: 0.3pt solid rgba(255, 255, 255, 0.963);
+  color:#fff ;
+  cursor: pointer;
+}
+
+#two {
+  background: linear-gradient(
+    135deg,
+    rgba(106, 219, 157, 0.724) 0%,
+    rgba(36, 160, 92, 0.323) 100%
+  );
+  transition: 0.5s;
+}
+#two:hover{
+  background: linear-gradient(
+    135deg,
+    rgba(29, 155, 126, 0.86) 0%,
+    rgba(29, 113, 130, 0.323) 100%
+  );
+  cursor: pointer;
+  color: #000;
+}
+
+.media {
+  position: relative;
+  top: 70%;
+  /* z-index: 1; */
+  /* right: 50%; */
+  left: 35%;
+}
+
+.media ul {
+  position: relative;
+  list-style: none;
+}
+
+.media ul li {
+  color: grey;
+  padding: 12px 10;
+ 
+ display: inline-block;
+  font-size: 25px;
+}
+.media ul li:hover{
+  cursor: pointer;
+  color: #fff;
+}
+
+
+.loading-screen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #0a0a0a;
+  z-index: 2;
+}
+
+.ring {
+  margin: 0%;
+  padding: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  width: 60%;
+  opacity: 0.7;
+}
+
+.ringOne img {
+  animation: rotate 2s linear infinite;
+}
+.ringTwo img {
+  animation: rotate 8s linear infinite;
+}
+
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .loading-screen {
+    display: none;
+  }
+  .ring img {
+    display: none;
+  }
+  .header p,
+  button,
+  .media,
+  h1 {
+    display: none;
+  }
+}
